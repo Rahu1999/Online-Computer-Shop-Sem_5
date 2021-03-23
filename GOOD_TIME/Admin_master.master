@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_master.master.cs" Inherits="Admin_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style4
+        {
+            width: 235px;
+            height: 208px;
+        }
+        .style7
+        {
+            height: 140px;
+            width: 228px;
+        }
+        .style8
+        {
+            height: 208px;
+            width: 268435680px;
+        }
+    </style>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table id="Table_01"  border="10"  bgcolor="Yellow" align="center" 
+        class="style6">
+	<tr  align="center" bgcolor="#9900FF" style="font-family: Algerian; font-size: xx-large; font-weight: bold; font-style: normal; font-variant: normal; text-transform: uppercase; color: #FFFFFF">
+		<td colspan="11" class="style4" bgcolor="#FFFF99">
+            <img alt="" class="style7" src="images/3.png" /></td>
+    
+  
+        <td class="style8" bgcolor="#666699">
+           <asp:Label ID="Label1" runat="server" ForeColor="Black" 
+                Text="Online Computer Shop " 
+                Font-Size="XX-Large" Width="267px" Font-Bold="True" BorderColor="#333300"></asp:Label>
+                        
+        </td>
+        
+      </tr>
+      </table>
+        
+            
+    <table align="center">
+        <tr>
+        
+            <td class="style9" style="font-family: 'Arial Black'">
+
+                
+
+                <asp:Button ID="Button1" runat="server" Text="Add_products" Width="195px" BackColor="#993333"
+                    BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                    ForeColor="White" Height="55px" Style="margin-left: 52px" 
+                    onclick="add_product_Click" />
+
+                    <asp:Button ID="Button7" runat="server" BackColor="#993333" 
+                    BorderColor="#FFCC66" ForeColor="White" Height="55px" onclick="Button7_Click" 
+                    style="font-weight: 700; font-size: x-large; margin-left: 0px;" Text="Details_Product" 
+                    Width="217px" BorderStyle="Dashed" />
+            </td>
+ 
+            <td>
+                <asp:Button ID="btnAllWATCH" runat="server" Text="All_Computers" Width="183px" BackColor="#993333"
+                    BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                    ForeColor="White" Height="57px" Style="margin-left: 0px" 
+                    onclick="btnAllWATCH_Click" />
+            </td>
+            <td>
+                <asp:Button ID="log_out" runat="server" Text="Log_Out" Width="187px" BackColor="#993333"
+                    BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                    ForeColor="White" Height="57px" Style="margin-left: 0px" 
+                    onclick="log_out_Click"  />
+            </td>
+            <td>
+                <asp:Button ID="Button6" runat="server" Text="Home" Width="209px" BackColor="#993333"
+                    BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                    ForeColor="White" Height="57px" Style="margin-left: 0px" 
+                    onclick="Button6_Click"  />
+            </td>
+        </tr>
+    </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+ 
+    </form>
+</body>
+</html>

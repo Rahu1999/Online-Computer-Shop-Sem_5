@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #Table_01
+        {
+            height: 213px;
+            width: 800px;
+            margin-bottom: 0px;
+        }
+        .style4
+        {
+            width: 268435408px;
+        }
+        .style5
+        {
+            width: 517px;
+            font-size: small;
+        }
+        .style6
+        {
+            width: 715px;
+        }
+        .style7
+        {
+            width: 210px;
+            height: 165px;
+        }
+    </style>
+</head>
+<body text="#ffffff">
+    <form id="form1" runat="server">
+    <table id="Table_01"  border="10"  bgcolor="Yellow" align="center" 
+        class="style6">
+	<tr  align="center" bgcolor="#9900FF" style="font-family: Algerian; font-size: xx-large; font-weight: bold; font-style: normal; font-variant: normal; text-transform: uppercase; color: #FFFFFF">
+		<td colspan="11" class="style4" bgcolor="#FFFF99">
+            <img alt="" class="style7" src="images/3.png" /></td>
+    
+  
+        <td class="style5" bgcolor="#666699">
+           <asp:Label ID="Label1" runat="server" BackColor="White" ForeColor="Black" 
+                Text="Online Computer Shop " BorderStyle="Groove" Height="77px" 
+                style="margin-bottom: 47px; margin-left: 0px; margin-top: 0px;" 
+                Font-Size="XX-Large" Width="267px" Font-Bold="True" BorderColor="#333300"></asp:Label>
+                        
+        </td>
+        
+      </tr>
+      </table>
+<center>
+    <table>
+                    <tr align="center">
+                        <td>
+                            <asp:Button ID="lgout" runat="server" Text="LOGOUT" Width="194px" 
+                                BackColor="#993333" ForeColor="White"
+                                 BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                                 Height="57px" Style="margin-left: 0px" 
+                                OnClick="logout" Visible="False" />
+                  
+                        </td>
+
+                        <td>
+                            <asp:Button ID="btnall_watch" runat="server" Text="All_Computers" Width="194px" 
+                                BackColor="#993333" ForeColor="White"
+                                BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                                 Height="57px" Style="margin-left: 0px" 
+                                onclick="btnall_watches" Visible="False"  />
+                           </td>
+
+                           <td>
+                           
+                               <asp:Button ID="Button6" runat="server" Text="LOGIN" Width="209px" 
+                                   BackColor="#993333" ForeColor="White"
+                                BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                                Height="57px" Style="margin-left: 0px"  
+                                   onclick="Button6_Click"  />
+                        </td>
+                         <td>
+                               <asp:Button ID="btnhome" runat="server" Text="SIGN UP" Width="209px" 
+                                   BackColor="#993333" ForeColor="White"
+                                BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                               Height="57px" Style="margin-left: 0px"  
+                                   onclick="btnlogin_Click"   />
+                        </td>
+
+                        <td>
+                         <asp:Button ID="contact" runat="server" Text="CONTACT US" Width="209px" 
+                                BackColor="#993333" ForeColor="White"
+                                BorderColor="#FFCC66" BorderStyle="Dashed" Font-Bold="True" Font-Size="Larger"
+                                 Height="57px" Style="margin-left: 0px"  
+                                   onclick="Button4_Click"   />
+                        </td>
+                    </tr>
+                </table>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      
+       
+       </center>
+
+      </form>
+</body>
+</html>
